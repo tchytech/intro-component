@@ -43,7 +43,7 @@ form.addEventListener('submit', e => {
     }
 })
     function errorFunc(req, message){
-        const formControl = req, perventElement;
+        const formControl = req.parentElement;
         const span = formControl.querySelector('span');
         span.innerText = message;
         req.className += "error";
