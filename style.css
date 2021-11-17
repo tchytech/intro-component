@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body{
+     margin: 0 auto;
+     font-family: 'Poppins', sans-serif;
+     background: url('/images/bg-intro-desktop.png') hsl(0, 100%, 74%);
+ }
+ main{
+     margin: 0 12em;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .left{
+     color: white;
+     margin-top: 60px;
+ }
+ .left p{
+     margin-top: 15px;
+ }
+ span{
+     font-weight: bold;
+     font-family: 'Poppins', sans-serif;
+ }
+ .right{
+     margin-top: 5em;
+ }
+ .right-top{
+     margin-bottom: 10px;
+     background-color: hsl(248, 32%, 49%);
+     padding: 12px;
+     width: 26.5em;
+     border-radius: 8px;
+     color: white;
+     font-size: 15px;
+     text-align: center;
+     
+ }
+ form{
+     background-color: white;
+     width: 25em;
+     height: 30em;
+     border-radius: 10px;
+     padding: 12px;   
+    
+ }
+ input:focus{
+     outline: none;
+ }
+ .error{
+     border: 2px solid red;
+     background: url('/images/icon-error.svg') no-repeat;
+     background-position: 95% 50%;
+ }
+ .error-message{
+     font-size: 12px;
+     margin-left: auto;
+     margin-top: -15px;
+     margin-bottom: 20px;
+ }
+ form > input{
+     width: 25em;
+     margin: 18px;
+     padding: 8px;
+     border-radius: 5px;
+     font-family: 'Poppins', sans-serif;
+     border: 1px solid rgb(189, 186, 186);
+ }
+ form p{
+    font-family: 'poppins', sans-serif;
+    color: rgb(197, 197, 194);
+    font-size: 10px;
+    margin-left: 20px;
+   }
+   form p span{
+       color: #f37575;
+       font-size: 10px;
+       
+    }
+ .btn{
+     background-color:  hsl(154, 59%, 51%);
+     color: white;
+     font-family: 'Poppins', sans-serif;
+     border: 1px solid transparent;
+     border-radius: 10px;
+     outline: none;
+     height: 3.5em;
+     width: 25.2em;
+     margin: 20px;
+ }
+ .btn:hover{
+     color: hsl(154, 59%, 51%);
+     background-color: transparent;
+     cursor: pointer;
+     border: 1px solid hsl(154, 59%, 51%);
+ }
+ @media screen and (max-width: 700px) {
+     body{
+         width: 100%;
+         font-family: 'poppins', sans-serif;
+         background: url('/images/bg-intro-mobile.png') hsl(0, 100%, 74%);
+     }
+     main{
+         display: flex;
+         flex-direction: column;
+         margin: 0 auto;
+         text-align: center;
+     }
+     .left h1{
+         font-size: 30px;
+     }
+     .left p{
+         margin: 20px 40px;
+         font-size: 16px;
+     }
+     .right-top{
+         width: 350px;
+         height: 80px;
+         margin-left: 5px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+     }
+     .right-top p{
+        font-size: 15px; 
+        margin: 0px 50px; 
+        line-height: 25px;
+        text-align: center;
+     }
+     form{
+         width: 22em;
+         height: 35em;
+         box-shadow: 2px 2p 3px 4px #ccc;
+     }
+     form input{
+         width: 23em;
+         height: 4em;
+         margin-right: 30px;
+     }
+     .btn{
+        width: 23em;
+        height: 60px;
+        margin-top: 50px;
+     }
+     .btn:hover{
+        color: hsl(154, 59%, 51%);
+        background-color: transparent;
+        cursor: pointer;
+        border: 1px solid hsl(154, 59%, 51%);
+    }
+     form p{
+         font-family: 'poppins', sans-serif;
+         color: rgb(197, 197, 194);
+         font-size: 13px;
+        }
+    form p span{
+            color: #f37575;
+         }
+ }
